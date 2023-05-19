@@ -1,0 +1,29 @@
+.content-lirik{
+    padding: 11px 0px 10px 0px   ;
+}
+
+.audio{
+    position: fixed;
+    margin-left: 122px;
+    margin-right: 122px;
+    margin-top: -22px;
+}
+@media only screen and (max-width: 320px) {
+    .audio{
+        position: fixed;
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: -22px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .audio{
+    position: fixed;
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: -22px;
+    }
+}
+@media only screen and (max-width: 425px) {
+
+}

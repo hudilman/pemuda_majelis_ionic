@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Lirik Sholawat</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Lirik Sholawat</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+   
+<ion-row *ngFor="let d of data">
+  
+  <ion-col col-4>
+    <ion-card><a (click)="detail(d)"><img src="./../../assets/image/image-list-sholawat.jpg" alt="" /></a></ion-card>
+  </ion-col>
+  <ion-col col-8 class="kolom-konten">
+  <a (click)="detail(d)">{{ d.judul |slice:0:17 }}..</a>
+  </ion-col>
+</ion-row>
+  </div>
+</ion-content>
